@@ -10,21 +10,15 @@ header {
   justify-content: center;
   align-content: center;
 
-
-  border: 1px solid red;
-
 }
 
 .avatar-name {
   justify-content: center;
 
-
-  border: 1px solid red;
 }
 
 #name {
   display: flex;
   justify-content: center;
 
-  border: 1px solid red;
 }

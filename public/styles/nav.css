@@ -10,7 +10,6 @@ nav {
   flex-direction: row-reverse;
   justify-content: space-between;
 
-  border: 1px solid red;
 }
 
 nav .tweeter {
@@ -22,7 +21,6 @@ nav .tweeter {
   display: flex;
   align-self: flex-end;
 
-  border: 1px solid red;
 }
 
 .icon {
@@ -33,5 +31,4 @@ nav .tweeter {
   display: flex;
   align-content: flex-end;
 
-  border: 1px solid red;
 }
