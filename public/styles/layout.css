@@ -15,10 +15,16 @@ html {
  */
 
 body {
+  width: 100%;
+  /* padding: 0% 5%; */
+
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+
+
+  border: 1px solid red;
 
 }
 
@@ -26,10 +32,23 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+/* main {
+  background-color: #ffdfde;
+  background-image: url('../images/binding-dark.png');
+
+  display: flex;
+  justify-content: center;
+} */
+
 .container {
- width: 90%;
+  /* padding: 2% 5%; */
   
- background-color: yellowgreen;
- display: flex;
- justify-content: center;
+  background-color: #ffdfde;
+  background-image: url('../images/binding-dark.png');
+
+  /* display: flex;
+  justify-self: center; */
+
+
+  border: 1px solid red;
 }

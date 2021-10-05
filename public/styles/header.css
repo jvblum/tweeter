@@ -16,15 +16,21 @@ header {
   justify-content: center;
   align-content: center;
 
+
+  border: 1px solid red;
+
 }
 
 .avatar-name {
-  background-color: black;
   justify-content: center;
+
+
+  border: 1px solid red;
 }
 
 #name {
   display: flex;
   justify-content: center;
-  background-color: yellowgreen;
+
+  border: 1px solid red;
 }
