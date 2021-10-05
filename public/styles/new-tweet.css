@@ -1,0 +1,22 @@
+.new-tweet {
+  border: 1px solid red;
+  width: min-content;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.new-tweet .bottom {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid red;
+}
+
+.new-tweet #button {
+  background-color: midnightblue;
+  color: white;
+
+  border: 1px solid red;
+}
