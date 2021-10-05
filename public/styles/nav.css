@@ -27,8 +27,14 @@ nav .tweeter {
   height: 50%;
   width: max-content;
 
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+}
+.icon #iconId {
+  width: min-content;
 
   display: flex;
-  align-content: flex-end;
-
+  align-self: center;
 }
