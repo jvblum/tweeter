@@ -1,0 +1,53 @@
+article {
+  /* width: 90%; */
+  margin: 5% 0%;
+  border: 2px solid black;
+
+  /* display: flex; */
+}
+
+article:hover {
+  box-shadow: 5px 10px #aa7777;
+}
+
+article header{
+  /* override general header css */
+  height: 100%;
+  width: 100%;
+
+  /* margin: 0% 2%; */
+  padding: 0% 2%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+article p {
+  margin: 3% 3%;
+
+}
+
+article footer {
+  padding: 0% 2%;
+  /* margin: 0% 2%; */
+
+  display: flex;
+  justify-content: space-between;
+}
+
+article footer .icons {
+  font-size: 14px;
+  color: #4056A1;
+  align-self: start;
+}
+
+#flag:hover {
+  color: #f3f3b2;
+}
+
+#retweet:hover {
+  color: #f3f3b2;
+}
+#heart:hover {
+  color: yellow;
+}

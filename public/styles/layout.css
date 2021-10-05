@@ -29,12 +29,19 @@ body {
  */
 
 .container {
-  padding: 2% 5%;
+  padding: 2% 10%;
   
   background-color: #ffdfde;
   background-image: url('../images/binding-dark.png');
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
 
+}
+
+hr {
+  margin: 1%;
+  border: 1.5px solid #111111;
 }

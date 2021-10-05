@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -31,7 +32,7 @@
 
 
     <!-- Dev-only; delete later -->
-    <link rel="stylesheet" href="/styles/border.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="/styles/border.css" type="text/css" /> -->
 
   </head>
 
@@ -39,7 +40,6 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <div class="icon">
-            <!-- <p><i>Write</i> A New Tweet</p> -->
             <span><i>Write </i>A New Tweet</span>
             <i class="fas fa-angle-double-down" id=iconId></i>
       </div>
@@ -68,13 +68,31 @@
         <form method="POST" action="/tweets">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <hr class="solid"> 
+          <hr> 
           <div class="bottom">
             <button type="submit" id="button">Tweet</button>
             <output name="counter" class="char-counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
+      <article>
+        <header>
+          <span>ph<span>MraPra</span></span>
+          <span>@mrap</span>
+        </header>
+        <p>
+          There's something here  
+        </p>
+        <hr> 
+        <footer>
+          <span>date</span>
+          <span class="icons">
+            <i class="fas fa-flag" id="flag"></i>
+            <i class="fas fa-retweet" id="retweet"></i>
+            <i class="fas fa-heart" id="heart"></i>
+          </span>
+        </footer>
+      </article>
     </main>
   </body>
 </html>
