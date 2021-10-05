@@ -1,5 +1,4 @@
 .new-tweet {
-  border: 1px solid red;
   width: 90%;
 
   display: flex;
@@ -13,7 +12,6 @@
   display: flex;
   justify-content: space-between;
 
-  border: 1px solid red;
 }
 
 .new-tweet #button {
@@ -21,7 +19,6 @@
   color: white;
   font-family: 'Bungee', cursive;
 
-  border: 1px solid red;
 }
 
 textarea {
@@ -30,5 +27,4 @@ textarea {
   background-color: transparent;
   border-color: transparent;
 
-  
 }
