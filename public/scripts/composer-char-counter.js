@@ -9,11 +9,20 @@ $(document).ready(() => {
 
     displayCount = charLimit - charCount;
 
+    // handles if counter should be red or not
+    if (displayCount < 0) {
+      $('.char-counter').attr('id', 'red-counter');
+    } else {
+      $('.char-counter').attr('id', 'null');
+    }
+
     // assigns value of inner element as displayCount (character limit subtracted by character count)
     $('.char-counter').text(displayCount);
     console.log(charCount);
     console.log(displayCount);
+
   };
+
 
   composerEvent.on('keyup', charCounter);
 

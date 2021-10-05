@@ -28,3 +28,7 @@ textarea {
   border-color: transparent;
 
 }
+
+#red-counter {
+  color: red;
+}
