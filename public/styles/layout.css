@@ -16,7 +16,6 @@ html {
 
 body {
   width: 100%;
-  /* padding: 0% 5%; */
 
   color: #545149;
   background-color: #f4f1ec;
@@ -41,13 +40,13 @@ body {
 } */
 
 .container {
-  /* padding: 2% 5%; */
+  padding: 2% 5%;
   
   background-color: #ffdfde;
   background-image: url('../images/binding-dark.png');
 
-  /* display: flex;
-  justify-self: center; */
+  display: flex;
+  justify-content: center;
 
 
   border: 1px solid red;

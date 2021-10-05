@@ -34,10 +34,10 @@
     <nav>
       <div class="icon">
             <!-- <p><i>Write</i> A New Tweet</p> -->
-            <i>Write</i> A New Tweet
+            <span><i>Write </i>A New Tweet</span>
             <i class="fas fa-angle-double-down"></i>
       </div>
-      <span>
+      <span class="tweeter">
         tweeter
       </span>
     </nav>
@@ -62,7 +62,7 @@
         <form method="POST" action="/tweets">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <br> 
+          <hr class="solid"> 
           <div class="bottom">
             <button type="submit" id="button">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>

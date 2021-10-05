@@ -24,7 +24,7 @@ nav {
   border: 1px solid red;
 }
 
-nav span {
+nav .tweeter {
   height: min-content;
 
   font-family: 'Bungee', cursive;
