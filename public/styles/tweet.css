@@ -35,19 +35,21 @@ article footer {
   justify-content: space-between;
 }
 
+
 article footer .icons {
   font-size: 14px;
   color: #4056A1;
-  align-self: start;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 #flag:hover {
   color: #f3f3b2;
 }
-
 #retweet:hover {
   color: #f3f3b2;
 }
 #heart:hover {
-  color: yellow;
+  color: #f3f3b2;
 }
