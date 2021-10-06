@@ -29,7 +29,7 @@ article header{
 
 article p {
   margin: 3% 3%;
-
+  word-wrap: break-word;
 }
 
 article footer {
@@ -42,6 +42,7 @@ article footer {
 
 
 article footer .icons {
+  width: 60px;
   font-size: 14px;
   color: #4056A1;
 
