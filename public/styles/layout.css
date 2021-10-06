@@ -32,7 +32,7 @@ body {
   padding: 2% 10%;
   
   background-color: #ffdfde;
-  background-image: url('../images/binding-dark.png');
+  background-image: url('../images/bg/binding-dark.png');
 
   display: flex;
   flex-direction: column;

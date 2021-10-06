@@ -3,7 +3,7 @@ header {
   width: 100%;
   background-color: darkseagreen;
   background-color: #ffdfde;
-  background-image: url('../images/binding-dark.png');
+  background-image: url('../images/bg/binding-dark.png');
 
   display: flex;
   flex-direction: row;
