@@ -24,8 +24,6 @@ $(document).ready(() => {
 
     const $line = $('<hr>');
 
-    console.log($avatars)
-    
     // init containers
     const $tweet = $('<article>');
 
