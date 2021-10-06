@@ -1,25 +1,30 @@
 $(document).ready(() => {
-  console.log('nav-sticky.js');
   // fix nav elements in position;
 
   // get nav
-  // const nav = $('nav');
-  const nav = document.querySelector('nav');
+  const nav = $('nav');
 
 
   // get nav offset position
-  const sticky = nav.offsetTop;
+  const sticky = nav.offset().top;
 
   const fixNav = () => {
 
     // nav sticky class toggle
-    console.log(window.pageYOffset, '?>', sticky);
     if (window.pageYOffset > sticky) {
-      nav.classList.add("sticky");
+      nav.attr('class', 'sticky');
     } else {
-      nav.classList.remove("sticky");
+      nav.removeAttr('class');
     }
   }
 
   $(document).scroll(fixNav);
 });
+
+// dev-only
+
+// const nav = document.querySelector('nav');
+// const sticky = nav.offsetTop;
+// window.document.addEventListener('scroll', fixNav);
+// nav.classList.add("sticky");
+// nav.classList.remove("sticky");
