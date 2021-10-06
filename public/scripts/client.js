@@ -4,11 +4,10 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
-// takes tweet json object; returns article (html) of tweet
-
 $(document).ready(() => {
 
+
+  // takes tweet object; returns html article of tweet
   const createTweetElement = tweet => {
     
     // write elements 
@@ -44,13 +43,11 @@ $(document).ready(() => {
     
     return $tweet;
   };
-  
-  // 
-  
+
   const renderTweets = tweets => {
     
     // clear out container
-    const $container = $(".container");
+    const $container = $(".tweets");
     $container.empty();
     
     // render tweets
@@ -60,11 +57,34 @@ $(document).ready(() => {
     }
     
   }
-  
-  // Test / driver code (temporary)
-  
-  // example below
-  // Fake data taken from initial-tweets.json
+
+    const $form = $(".new-tweet");
+
+    // new-tweet post request
+    $form.on("submit", function(event) {
+
+      // stops refresh
+      event.preventDefault();
+      console.log('form was submitted');
+      
+      const serializedData = $(this).serialize();
+      console.log(this);
+      console.log(serializedData);
+      $.post("/tweets", serializedData, (response) => {
+
+        console.log(response);
+        renderTweets(data);
+        
+      });
+
+    });
+
+    renderTweets(data);
+    
+  });
+
+  // sample database
+
   const data = [
     {
       "user": {
@@ -89,7 +109,3 @@ $(document).ready(() => {
         "created_at": 1461113959088
       }
     ]
-    
-    renderTweets(data);
-    
-  });

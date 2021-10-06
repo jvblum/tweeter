@@ -65,9 +65,9 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+        <!-- new tweet -->
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <form class="new-tweet" method="POST" action="/tweets">
           <!-- <label for="tweet-text">What are you humming about?</label> -->
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <hr> 
@@ -76,31 +76,33 @@
             <output name="counter" class="char-counter" for="tweet-text">140</output>
           </div>
         </form>
+        <!-- /new -->
+      <section class="tweets">
+        <article>
+          <!-- generic article/container -->
+          <header>
+            <div class="user">
+              <span class="avatar">ph</span>
+              <span class="name">MraPra</span>
+            </div>
+
+            <span class="handle">@mrap</span>
+          </header>
+          <p>
+            There's something here  
+          </p>
+          <hr> 
+          <footer>
+            <span>date</span>
+            <span class="icons">
+              <i class="fas fa-flag" id="flag"></i>
+              <i class="fas fa-retweet" id="retweet"></i>
+              <i class="fas fa-heart" id="heart"></i>
+            </span>
+          </footer>
+          <!-- /generic -->
+        </article>
       </section>
-      <article>
-        <!-- generic article/container -->
-        <header>
-          <div class="user">
-            <span class="avatar">ph</span>
-            <span class="name">MraPra</span>
-          </div>
-          
-          <span class="handle">@mrap</span>
-        </header>
-        <p>
-          There's something here  
-        </p>
-        <hr> 
-        <footer>
-          <span>date</span>
-          <span class="icons">
-            <i class="fas fa-flag" id="flag"></i>
-            <i class="fas fa-retweet" id="retweet"></i>
-            <i class="fas fa-heart" id="heart"></i>
-          </span>
-        </footer>
-        <!-- /generic -->
-      </article>
     </main>
   </body>
 </html>
