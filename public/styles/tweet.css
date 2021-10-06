@@ -22,6 +22,11 @@ article header{
   justify-content: space-between;
 }
 
+.avatar {
+  height: 24px;
+  width: 24px;
+}
+
 article p {
   margin: 3% 3%;
 

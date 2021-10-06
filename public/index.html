@@ -26,14 +26,17 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src='scripts/composer-char-counter.js'></script>
     <script type="text/javascript" src='scripts/nav-sticky.js'></script>
 
+   
+
     <!-- Dev-only; delete later -->
-    <!-- <link rel="stylesheet" href="/styles/border.css" type="text/css" /> -->
+    <link rel="stylesheet" href="/styles/border.css" type="text/css" />
 
   </head>
 
@@ -77,9 +80,14 @@
         </form>
       </section>
       <article>
+        <!-- generic article/container -->
         <header>
-          <span>ph<span>MraPra</span></span>
-          <span>@mrap</span>
+          <div class="user">
+            <span class="avatar">ph</span>
+            <span class="name">MraPra</span>
+          </div>
+          
+          <span class="handle">@mrap</span>
         </header>
         <p>
           There's something here  
@@ -93,6 +101,7 @@
             <i class="fas fa-heart" id="heart"></i>
           </span>
         </footer>
+        <!-- /generic -->
       </article>
     </main>
   </body>

@@ -4,6 +4,6 @@
   width: 100%;
 }
 
-.sticky + .container {
-  padding-top: 102px;
-}
+/* .sticky + main {
+  padding: 102px;
+} */

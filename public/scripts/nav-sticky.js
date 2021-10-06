@@ -4,7 +4,6 @@ $(document).ready(() => {
   // get nav
   const nav = $('nav');
 
-
   // get nav offset position
   const sticky = nav.offset().top;
 
@@ -12,9 +11,9 @@ $(document).ready(() => {
 
     // nav sticky class toggle
     if (window.pageYOffset > sticky) {
-      nav.attr('class', 'sticky');
+      nav.addClass('sticky');
     } else {
-      nav.removeAttr('class');
+      nav.removeClass('sticky');
     }
   }
 
