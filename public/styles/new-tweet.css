@@ -4,6 +4,7 @@
 }
 
 .new-tweet .bottom {
+  padding: 1% 4%;
   font-weight: 900;
 
   display: flex;
@@ -17,9 +18,15 @@
 }
 
 textarea {
-  width: 90%;
-  margin: 0% 5%;
+  padding: 2% 3%;
+  height: 72px;
   background-color: transparent;
+  border-color: transparent;
+}
+
+textarea:hover {
+  background-color: rgb(241, 241, 241);
+  background-image: url('../images/bg/binding-dark.png');
   border-color: transparent;
 }
 

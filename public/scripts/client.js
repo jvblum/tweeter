@@ -67,16 +67,16 @@ $(document).ready(() => {
     const input = $('#tweet-text').val();
     const serializedData = $(this).serialize();
 
-    console.log('input:', input);
-    console.log('serializedData:', serializedData);
-
     // bad requests
     if (!input) {
-      return alert('write something!');
+      return $('.error').attr('id', 'trigger').text('error: empty form - write something!');
     }
     if (input.length > 140) {
-      return alert('tweet too long');
+      return $('.error').attr('id', 'trigger').text('error: humming too long!');
     } // 140 is the charlimit for the app;
+
+    // remove error message
+    $('.error').attr('id', 'null');
     
     // clears textarea
     $('#tweet-text').val('');
@@ -90,7 +90,6 @@ $(document).ready(() => {
 
   });
 
-    
   // gets data from tweets then renders them
   const loadTweets = () => {
 
