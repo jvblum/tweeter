@@ -48,3 +48,18 @@ nav .tweeter {
   display: flex;
   align-self: center;
 }
+
+/* toTop section */
+
+.toTop {
+  position: fixed;
+  margin: 92vh 94vw;
+  align-self: right;
+  background-color: transparent;
+  z-index: 2;
+
+  color: #4056A1;
+}
+.toTop:hover {
+  color: #f3f3b2;
+}

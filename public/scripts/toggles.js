@@ -19,8 +19,9 @@ $(document).ready(() => {
   });
 
   // go to top
-  // $('').click(() => {
-
-  // });
+  $('.toTop').click(() => {
+    console.log('clicked');
+    $(window).scrollTop(0);
+  });
   
 });
