@@ -6,6 +6,12 @@
 
 $(document).ready(() => {
 
+  // xss protection
+  const escape = str => {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   // takes tweet object; returns html article of tweet
   const createTweetElement = tweet => {
@@ -19,7 +25,7 @@ $(document).ready(() => {
           </div>
           <span class="handle">${tweet.user.handle}</span>
         </header>
-        <p>${tweet.content.text}</p><hr>
+        <p>${escape(tweet.content.text)}</p><hr>
         <footer>
           <span>${timeago.format(tweet.created_at)}</span>
             <span class="icons">
@@ -99,7 +105,7 @@ $(document).ready(() => {
     }
     if (input.length > 140) {
       return alert('tweet too long');
-    }
+    } // 140 is the charlimit for the app;
     
     // clears textarea
     $('#tweet-text').val('');
