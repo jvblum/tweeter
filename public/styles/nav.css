@@ -28,13 +28,21 @@ nav .tweeter {
 .icon {
   height: 50%;
   width: max-content;
+  background-color: transparent;
+  border: transparent;
+  color: white;
 
   display: flex;
   flex-direction: column;
   align-self: center;
 
 }
-.icon #iconId {
+
+.icon:hover {
+  color: #f3f3b2;
+}
+
+.icon #dDown {
   width: min-content;
 
   display: flex;

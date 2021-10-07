@@ -33,23 +33,26 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src='/scripts/composer-char-counter.js'></script>
     <script type="text/javascript" src='/scripts/nav-sticky.js'></script>
+    <script type="text/javascript" src='/scripts/toggles.js'></script>
 
     <!-- Dev-only; delete later -->
-    <!-- <link rel="stylesheet" href="/styles/border.css" type="text/css" /> -->
+    <link rel="stylesheet" href="/styles/border.css" type="text/css" />
 
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <div class="icon">
-            <span><i>Write </i>A New Tweet</span>
-            <i class="fas fa-angle-double-down" id=iconId></i>
-      </div>
+      <button class="icon" type="button">
+        <span><i>Write </i>A New Tweet</span>
+        <i class="fas fa-angle-double-down" id=dDown></i> 
+     
+      </button>
       <span class="tweeter">
         tweeter
       </span>
     </nav>
+    <!-- /nav -->
 
     <header>
       <div class='avatar-name'>
@@ -66,40 +69,39 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
         <!-- new tweet -->
-        <div class="error"></div>
-        <form class="new-tweet" method="POST" action="/tweets">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <hr> 
-          <div class="bottom">
-            <button type="submit" id="button">Tweet</button>
-            <output name="counter" class="char-counter" for="tweet-text">140</output>
-          </div>
-        </form>
+        <div>
+          <div class="error"></div>
+          <form class="new-tweet" method="POST" action="/tweets">
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <hr> 
+            <div class="bottom">
+              <button type="submit" id="button">Tweet</button>
+              <output name="counter" class="char-counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </div>
         <!-- /new -->
       <section class="tweets">
         <article>
-          <!-- generic article/container -->
+          <!-- template article/container -->
           <header>
             <div class="user">
-              <span class="avatar">ph</span>
-              <span class="name">MraPra</span>
+              <span class="avatar"></span>
+              <span class="name"></span>
             </div>
-
-            <span class="handle">@mrap</span>
+            <span class="handle"></span>
           </header>
-          <p>
-            There's something here  
-          </p>
+          <p></p>
           <hr> 
           <footer>
-            <span>date</span>
+            <span></span>
             <span class="icons">
               <i class="fas fa-flag" id="flag"></i>
               <i class="fas fa-retweet" id="retweet"></i>
               <i class="fas fa-heart" id="heart"></i>
             </span>
           </footer>
-          <!-- /generic -->
+          <!-- /template -->
         </article>
       </section>
     </main>
