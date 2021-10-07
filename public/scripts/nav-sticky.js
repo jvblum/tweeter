@@ -9,7 +9,7 @@ $(document).ready(() => {
 
   const fixNav = () => {
 
-    // nav sticky class toggle
+    // toggle .sticky
     if (window.pageYOffset > sticky) {
       nav.addClass('sticky');
     } else {

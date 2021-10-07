@@ -13,7 +13,7 @@ $(document).ready(() => {
     return div.innerHTML;
   };
 
-  // takes tweet object; returns html article of tweet
+  // take tweet object; return html article of tweet
   const createTweetElement = tweet => {
     
     return $(`
@@ -60,14 +60,14 @@ $(document).ready(() => {
   // new-tweet post request
   $form.on('submit', function(event) {
 
-    // stops refresh
+    // stop refresh
     event.preventDefault();
 
     // init submitted data
     const input = $('#tweet-text').val();
     const serializedData = $(this).serialize();
 
-    // bad requests
+    // handle bad requests
     if (!input) {
       return $('.error').attr('id', 'trigger').text('error: empty form - write something!');
     }
@@ -75,13 +75,12 @@ $(document).ready(() => {
       return $('.error').attr('id', 'trigger').text('error: humming too long!');
     } // 140 is the charlimit for the app;
 
-    // remove error message
-    $('.error').attr('id', 'null');
-    
-    // clears textarea
-    $('#tweet-text').val('');
+    // reset stuff
+    $('.error').attr('id', 'null'); // remove error message
+    $('#tweet-text').val(''); // clear textarea
+    $('.char-counter').text('140'); // reset counter (hard)
 
-    // submits input to database; then renders page;
+    // submit input to database; then renders page;
     $.post('/tweets', serializedData, (response) => {
 
       loadTweets();
@@ -90,7 +89,7 @@ $(document).ready(() => {
 
   });
 
-  // gets data from tweets then renders them
+  // get /tweets data then render
   const loadTweets = () => {
 
     $.get('/tweets', null, (data) => {
