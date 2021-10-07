@@ -1,9 +1,6 @@
 article {
-  /* width: 90%; */
   margin: 5% 0%;
   border: 2px solid black;
-
-  /* display: flex; */
 }
 
 article:hover {
@@ -14,8 +11,6 @@ article header{
   /* override general header css */
   height: 100%;
   width: 100%;
-
-  /* margin: 0% 2%; */
   padding: 0% 2%;
 
   display: flex;
@@ -34,7 +29,6 @@ article p {
 
 article footer {
   padding: 0% 2%;
-  /* margin: 0% 2%; */
 
   display: flex;
   justify-content: space-between;

@@ -19,11 +19,3 @@ $(document).ready(() => {
 
   $(document).scroll(fixNav);
 });
-
-// dev-only
-
-// const nav = document.querySelector('nav');
-// const sticky = nav.offsetTop;
-// window.document.addEventListener('scroll', fixNav);
-// nav.classList.add("sticky");
-// nav.classList.remove("sticky");

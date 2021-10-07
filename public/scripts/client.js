@@ -34,41 +34,9 @@ $(document).ready(() => {
               </i><i class="fas fa-heart" id="heart">
               </i></span>
         </footer>
-      </article>`
-    );
+      </article>
+    `);
 
-    // // write elements
-    // const $avatars = $(`<img class="avatar" src="${tweet.user.avatars}">`);
-    // const $name = $('<span class="name">').text(tweet.user.name);
-    // const $handle = $('<span class="handle">').text(tweet.user.handle);
-    // const $content = $('<p>').text(tweet.content.text);
-    // const $timeago = $('<span>').text(timeago.format(tweet.created_at));
-
-    // const $flag = $('<i class="fas fa-flag" id="flag">');
-    // const $retweet = $('<i class="fas fa-retweet" id="retweet">');
-    // const $heart = $('<i class="fas fa-heart" id="heart"></i>');
-
-    // const $line = $('<hr>');
-
-    // // init containers
-    // const $tweet = $('<article>');
-
-    // const $header = $('<header>');
-    // const $user = $('<div class="user">');
-
-    // const $footer = $('<footer>');
-    // const $icons = $('<span class="icons">');
-
-    // // add elements to container
-    // $user.append($avatars, $name);
-    // $header.append($user, $handle);
-
-    // $icons.append($flag, $retweet, $heart);
-    // $footer.append($timeago, $icons);
-
-    // $tweet.append($header, $content, $line, $footer);
-    
-    // return $tweet;
   };
 
   const renderTweets = tweets => {
@@ -98,6 +66,9 @@ $(document).ready(() => {
     // init submitted data
     const input = $('#tweet-text').val();
     const serializedData = $(this).serialize();
+
+    console.log('input:', input);
+    console.log('serializedData:', serializedData);
 
     // bad requests
     if (!input) {
