@@ -15,7 +15,7 @@ $(document).ready(() => {
     } else {
       nav.removeClass('sticky');
     }
-  }
+  };
 
   $(document).scroll(fixNav);
 });

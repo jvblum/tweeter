@@ -3,11 +3,11 @@ $(document).ready(() => {
   let charCount = 0;
 
   // callback for event listener; assign length of #tweet-text value
-  const charCounter = (e) => {
+  const charCounter = () => {
     charCount = composerEvent.val().length;
-    charLimit = 140;
+    const charLimit = 140;
 
-    displayCount = charLimit - charCount;
+    const displayCount = charLimit - charCount;
 
     // toggle #red-counter
     if (displayCount < 0) {
