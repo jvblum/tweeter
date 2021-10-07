@@ -1,5 +1,5 @@
 article {
-  margin: 5% 0%;
+  margin-bottom: 1em;
   border: 2px solid black;
 }
 
@@ -11,7 +11,7 @@ article header{
   /* override general header css */
   height: 100%;
   width: 100%;
-  padding: 0% 2%;
+  padding: 0.3em 0.5em;
 
   display: flex;
   justify-content: space-between;
@@ -20,6 +20,14 @@ article header{
 .avatar {
   height: 24px;
   width: 24px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.handle {
+  font-style: italic;
 }
 
 article p {

@@ -1,5 +1,5 @@
 header {
-  height: 400px;
+  height: min-content;
   width: 100%;
 
   background-color: darkseagreen;
@@ -20,6 +20,7 @@ header img {
 
 .avatar-name {
   justify-content: center;
+  height: min-content;
 
 }
 
