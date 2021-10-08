@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/sticky.css" type="text/css" />
     <link rel="stylesheet" href="/styles/error.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/screen.css" type="text/css" />    
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -61,31 +62,26 @@
 
     <header>
       <div class='avatar-name'>
-        <div>
-          <img src="/images/profile-hex.png">
-        </div>
-        <br>
-        <div id='name'>
-          <h2>Your Name</h2>
-        </div>
+        <img src="/images/profile-hex.png">
+        <span id='name'>Your Name</span>
       </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-        <!-- new tweet -->
-        <div>
-          <div class="error"></div>
-          <form class="new-tweet" method="POST" action="/tweets">
-            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-            <hr> 
-            <div class="bottom">
-              <button type="submit" id="button">Tweet</button>
-              <output name="counter" class="char-counter" for="tweet-text">140</output>
-            </div>
-          </form>
-        </div>
-        <!-- /new -->
+      <!-- new tweet -->
+      <div>
+        <div class="error"></div>
+        <form class="new-tweet" method="POST" action="/tweets">
+          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <hr> 
+          <div class="bottom">
+            <button type="submit" id="button">Tweet</button>
+            <output name="counter" class="char-counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </div>
+      <!-- /new -->
       <section class="tweets">
         <!-- template article/container -->
         <article>

@@ -56,6 +56,7 @@ nav .tweeter {
   margin: 92vh 94vw;
   align-self: right;
   background-color: transparent;
+  border-color: transparent;
   z-index: 2;
 
   color: #4056A1;

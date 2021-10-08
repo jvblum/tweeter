@@ -7,7 +7,6 @@ header {
   background-image: url('../images/bg/binding-dark.png');
 
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-content: center;
 
@@ -27,5 +26,7 @@ header img {
 #name {
   display: flex;
   justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
 
 }
