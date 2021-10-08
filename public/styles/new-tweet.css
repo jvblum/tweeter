@@ -18,6 +18,11 @@
   font-family: 'Bungee', cursive;
 }
 
+.new-tweet #button:hover {
+  color: #f3f3b2;
+  box-shadow: 1px 2px #aa7777;
+}
+
 textarea {
   padding: 2% 3%;
   height: 72px;

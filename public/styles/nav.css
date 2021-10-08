@@ -44,6 +44,7 @@ nav .tweeter {
 
 .icon #dDown {
   width: min-content;
+  font-size: 2.5ch;
 
   display: flex;
   align-self: center;
@@ -53,11 +54,12 @@ nav .tweeter {
 
 .toTop {
   position: fixed;
-  margin: 92vh 94vw;
+  margin: 88vh 93.5vw;
   align-self: right;
   background-color: transparent;
   border-color: transparent;
   z-index: 2;
+  font-size: 4ch;
 
   color: #4056A1;
 }

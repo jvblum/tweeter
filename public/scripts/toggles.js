@@ -1,8 +1,7 @@
 $(document).ready(() => {
 
   // initialize new tweet slide toggle;
-  $('.new-tweet').slideUp(0);
-  let slideToggle = false;
+  let slideToggle = true;
 
   // new tweet slide toggle
   $('#dDown').click(() => {
